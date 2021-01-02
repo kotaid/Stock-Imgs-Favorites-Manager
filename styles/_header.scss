@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  margin-top: 3rem;
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input,
+    button {
+      font-size: clamp(0.2rem, 5vw, 1.7rem);
+      font-weight: 100;
+      border: none;
+      padding: 0.5rem 1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    input {
+      border-bottom: 1px solid #c8d3dc;
+      color: #2e3336;
+      position: relative;
+    }
+    button {
+      background-color: #434f55;
+      color: white;
+      width: 10rem;
+      border-radius: 20px;
+      box-shadow: 0 11px 14px #2e3336;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #2e3336;
+      }
+    }
+  }
+}
+::placeholder {
+  color: #c8d3dc;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c8d3dc;
+}

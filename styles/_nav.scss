@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  span {
+    padding: 0.2rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #2e33361a;
+    }
+  }
+  span:first-child {
+    position: relative;
+  }
+  #nav-anim {
+    width: 50%;
+    height: 2px;
+    background-color: #2e3336;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    justify-content: center;
+  }
+}
