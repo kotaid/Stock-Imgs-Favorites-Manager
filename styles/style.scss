@@ -9,11 +9,12 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #dce3e9;
+  overflow: auto;
   font-family: "Lato", sans-serif;
 }
 .app {
   width: 90%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
   background-color: white;
   border-top-left-radius: 2rem;

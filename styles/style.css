@@ -17,12 +17,13 @@ body {
           justify-content: center;
   height: 100vh;
   background-color: #dce3e9;
+  overflow: auto;
   font-family: "Lato", sans-serif;
 }
 
 .app {
   width: 90%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
   background-color: white;
   border-top-left-radius: 2rem;
@@ -167,15 +168,56 @@ main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin-top: 8rem;
 }
 
 main .card {
-  width: 30%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 350px;
+  position: relative;
 }
 
 main .card img {
   width: 100%;
+  height: auto;
+}
+
+main .card .card-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  padding: 1rem;
+  opacity: 0;
+  background-color: rgba(19, 35, 52, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .card .card-footer i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+main .card .card-footer i:hover {
+  color: white;
+}
+
+main .card:hover .card-footer {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
