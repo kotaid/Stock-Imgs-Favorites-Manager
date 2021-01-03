@@ -1,0 +1,1 @@
+# Stock-Imgs-Favorites-Manager
